@@ -1,0 +1,29 @@
+﻿
+
+1. Bật/Tắt Secure Boot:
+   - Khởi động lại máy và vào BIOS bằng F2/F10/F12/DEL.
+   - Tìm mục Secure Boot (trong Security/Boot/Advanced).
+   - Bật: Chọn Enabled.
+   - Tắt: Chọn Disabled.
+   - Lưu và thoát (F10 > Yes).
+
+2. Bật/Tắt TPM:
+   - Khởi động lại máy và vào BIOS.
+   - Tìm mục TPM (hoặc PTT/fTPM trong Security).
+   - Bật: Chọn Enabled.
+   - Tắt: Chọn Disabled hoặc Clear TPM.
+   - Lưu và thoát (F10 > Yes).
+
+3. Bật/Tắt HVCI:
+   - Khởi động lại máy và vào BIOS.
+   - Tìm các mục Virtualization, VT-d, Memory Protection.
+   - Bật: Bật Virtualization + Memory Protection.
+   - Tắt: Tắt Memory Protection.
+   - Lưu và thoát (F10 > Yes).
+
+### Lưu ý ###
+- Nếu Secure Boot không bật được, kiểm tra chế độ Boot Mode (UEFI).
+- TPM có thể hiển thị là PTT (Intel) hoặc fTPM (AMD).
+- HVCI yêu cầu Virtualization (VT-x, AMD-V) và VT-d/IOMMU.
+
+
